@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Home } from './components/Pages/Home';
-import { About } from './components/Pages/About';
+import { Home } from './Pages/Home';
+import { About } from './Pages/About';
+import { Menu }  from './components/Menu';
 
 import styles from './App.module.css'
 
-function App() {
+export function App() {
 
   return (
     <>
       <BrowserRouter>
+        <Menu />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -20,4 +22,3 @@ function App() {
   )
 }
 
-export default App
