@@ -4,9 +4,7 @@ import { Home } from './Pages/Home';
 import { About } from './Pages/About';
 import { Menu }  from './components/Menu';
 
-import styles from './App.module.css'
-
-export function App() {
+export function AppRoutes() {
 
   return (
     <>
