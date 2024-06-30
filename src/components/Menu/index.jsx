@@ -1,4 +1,4 @@
-import { MenuLink } from '../MenuLink';
+import { MenuLink } from '@components/MenuLink';
 
 import styles from './Menu.module.css';
 
