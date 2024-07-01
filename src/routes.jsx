@@ -5,6 +5,7 @@ import { About } from './Pages/About';
 import { Menu }  from '@components/Menu';
 import { Footer } from '@components/Footer';
 import { DefaultPage } from '@components/DefaultPage';
+import { Post } from '../src/Pages/Post'
 
 export function AppRoutes() {
 
@@ -16,6 +17,7 @@ export function AppRoutes() {
           <Route path='/' element={<DefaultPage />}>
             <Route index element={<Home />} />
             <Route path='about' element={<About />} />
+            <Route path='posts/:id' element={<Post />}/>
           </Route>
           <Route path='*' element={<h1>Página não encontrada</h1>} />
         </Routes>
