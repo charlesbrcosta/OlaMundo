@@ -1,8 +1,14 @@
+import { Button } from '@components/Button';
 import styles from './NotFound.module.css';
 
 import dogImage from '@assets/erro_404.png';
+import { useNavigate } from 'react-router-dom';
 
 export function NotFound() {
+
+    const navigate = useNavigate();
+    const go_back = -1
+
     return(
         <>
             <div className={styles.containerContent}>
@@ -15,8 +21,13 @@ export function NotFound() {
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
 
-                <div className={styles.containerButton}>
-                    <button>Voltar</button>
+                <div 
+                    className={styles.containerButton}
+                    onClick={() => navigate(go_back)}
+                >
+                    <Button size='lg'>
+                        Voltar
+                    </Button>
                 </div>
 
                 <img 
@@ -25,6 +36,7 @@ export function NotFound() {
                     alt='Cachorro de óculos e vestido igual a um humano.'
                 />
             </div>
+
             <div className={styles.blankSpace}></div>
         </>
     );
