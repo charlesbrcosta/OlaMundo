@@ -14,8 +14,8 @@ export function AppRoutes() {
         <Menu />
         <Routes>
           <Route path='/' element={<DefaultPage />}>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
           </Route>
           <Route path='*' element={<h1>Página não encontrada</h1>} />
         </Routes>

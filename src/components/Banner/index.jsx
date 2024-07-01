@@ -25,7 +25,7 @@ export function Banner() {
                 <img 
                     className={styles.myPhoto}
                     src='https://www.github.com/charlesbrcosta.png'
-                    alt='Foto de Vetorizada caricatura Charles Bruno'
+                    alt='Foto Vetorizada do Bruno'
                 />
             </div>
         </div>
