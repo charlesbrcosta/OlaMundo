@@ -4,10 +4,9 @@
       "paths": {
         "@components/*": ["components/*"],
         "@assets/*": ["assets/*"],
-       /*  "@utils/*": ["utils/*"],
-        "@styles/*": ["styles/*"] */
+        "@json/*": ["json/*"],
       }
     },
-    "include": ["src"]
+    "include": ["src"],
   }
   
