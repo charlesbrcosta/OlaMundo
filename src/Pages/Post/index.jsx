@@ -11,8 +11,6 @@ import posts from '@json/posts.json';
 import './Post.css';
 import styles from './Post.module.css';
 
-
-
 export function Post() {
 
     const parameters = useParams();

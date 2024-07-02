@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 export function NotFound() {
 
     const navigate = useNavigate();
-    const go_back = -1
+    const go_back = -1;
 
     return(
         <>
